@@ -61,5 +61,5 @@ If your syetem is windows, please choose
 * Results will be stored in the folder `Result/time_of_starting_the_run`, e.g., `2022-10-25-16-13-29`. 
   * `Parameters.txt`: record all the paremeters
   * `allobjs/ALL_Objs_{valid, test, ensemble, test}_genxxx_sofar.csv`: three or four `csv` file to record the objectives of all the individuals during optimisation process
-  * `detect/`: record (1) the details of the dataset and (2) the objectives of all the individuals during optimisation process every `logMetric` in `Fairness_main.py` generation
-  * `nets/`: the neural network files of all the individuals during optimisation process every `logMetric` in `Fairness_main.py` generation
+  * `detect/`: record (1) the details of the dataset and (2) the objectives of all the individuals during optimisation process every `logMetric` (set in `Fairness_main.py`) generation
+  * `nets/`: the neural network files of all the individuals during optimisation process every `logMetric` (set in `Fairness_main.py`) generation
