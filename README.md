@@ -53,12 +53,12 @@ If your syetem is windows, please choose
 5. Use `FairEMOL/EvolutionaryCodes/load_data.py` to splite the data into training data, validation data, ensemble data (if you need) and test data. You can also set`save_csv=1` to manually store them.
 6. Add the dataset's name in `FairEMOL/EvolutionaryCodes/data/objects/list.py`
 
-#### Set parameters
+#### Run algorithm
 1. Set algorithmic parameters in `Fairness_main.py`
 2. Run `Fairness_main.py`
 
 #### Obtain results
-* results will be stored in the folder `Result/time_of_starting_the_run`, e.g., `2022-10-25-16-13-29`. 
+* Results will be stored in the folder `Result/time_of_starting_the_run`, e.g., `2022-10-25-16-13-29`. 
   * `Parameters.txt`: record all the paremeters
   * `allobjs/ALL_Objs_{valid, test, ensemble, test}_genxxx_sofar.csv`: three or four `csv` file to record the objectives of all the individuals during optimisation process
   * `detect/`: record (1) the details of the dataset and (2) the objectives of all the individuals during optimisation process every `logMetric` in `Fairness_main.py` generation
