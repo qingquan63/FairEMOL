@@ -46,12 +46,13 @@ If your syetem is windows, please choose
 ````lib_path = __file__[:-11] + 'core/Windows/lib64/v3.7/'  ````
 
 #### Load dataset
-1. Put the raw data in `FairEMOL/EvolutionaryCodes/data/raw`
-2. Write the code to process raw date in `FairEMOL/EvolutionaryCodes/data/objects`, e.g., `German.py`
-3. Obtain the processed data in `FairEMOL/EvolutionaryCodes/data/preprocessed`, e.g., `german_numerical-for-NN.csv`
-4. Restore processed data in the folder `FairEMOL/EvolutionaryCodes/data`, e.g., `German`
-5. Use `FairEMOL/EvolutionaryCodes/load_data.py` to splite the data into training data, validation data, ensemble data (if you need) and test data. You can also set `save_csv=1` to manually store them.
-6. Add the dataset's name in `FairEMOL/EvolutionaryCodes/data/objects/list.py`
+1. Data pre-processing is based on the [approach](https://github.com/algofairness/fairness-comparison).
+   1. Put the raw data in `FairEMOL/EvolutionaryCodes/data/raw`
+   2. Write the code to process raw date in `FairEMOL/EvolutionaryCodes/data/objects`, e.g., `German.py`
+   3. Obtain the processed data in `FairEMOL/EvolutionaryCodes/data/preprocessed`, e.g., `german_numerical-for-NN.csv`
+   4. Restore processed data in the folder `FairEMOL/EvolutionaryCodes/data`, e.g., `German`
+2. Use `FairEMOL/EvolutionaryCodes/load_data.py` to splite the data into training data, validation data, ensemble data (if you need) and test data. You can also set `save_csv=1` to manually store them.
+3. Add the dataset's name in `FairEMOL/EvolutionaryCodes/data/objects/list.py`
 
 #### Run algorithm
 1. Set algorithmic parameters in `Fairness_main.py`
