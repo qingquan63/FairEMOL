@@ -37,11 +37,11 @@ The code implementation is based on [geatpy](https://github.com/geatpy-dev/geatp
 
 #### Set running environment
 
-In `FairEMOL/__init__.py`, if your system is linux, please maintain
+In `FairEMOL/__init__.py`, if your system is linux, please choose
 
 ````lib_path = __file__[:-11] + 'core/Linux/lib64/v3.7/'````
 
-If your syetem is windows, please maintain
+If your syetem is windows, please choose
 
 ````lib_path = __file__[:-11] + 'core/Windows/lib64/v3.7/'  ````
 
