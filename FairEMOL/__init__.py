@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-import all libs of FairEMOL
-
-"""
-
 import sys
 
 __author__ = "Geatpy Team"
