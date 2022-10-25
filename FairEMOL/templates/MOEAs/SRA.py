@@ -12,6 +12,7 @@ def SRA_parent_selection2(popobjs):
     
     
 def SRA_env_selection2(popobjs, n, levels):
+    # This is newly proposed based on "Stochastic Ranking Algorithm for Many-Objective Optimization Based on Multiple Indicators"
     # popobjs (N * M): objectives of population, #poluation = n, #objectives = m
     # n:               number of better parents
     popobjs1 = popobjs
@@ -81,6 +82,7 @@ def SRA_env_selection2(popobjs, n, levels):
 
 
 def SRA_env_selection(popobjs, n):
+    # This is the original algorithm "Stochastic Ranking Algorithm for Many-Objective Optimization Based on Multiple Indicators"
     # popobjs (N * M): objectives of population, #poluation = n, #objectives = m
     # n:               number of better parents
     popobjs1 = popobjs
