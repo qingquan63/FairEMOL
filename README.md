@@ -45,7 +45,7 @@ If your syetem is windows, please choose
 
 ````lib_path = __file__[:-11] + 'core/Windows/lib64/v3.7/'  ````
 
-#### Load dataset
+#### Load or add dataset
 1. Data pre-processing is based on the [approach](https://github.com/algofairness/fairness-comparison).
    1. Put the raw data in `FairEMOL/EvolutionaryCodes/data/raw`
    2. Write the code to process raw date in `FairEMOL/EvolutionaryCodes/data/objects`, e.g., `German.py`
