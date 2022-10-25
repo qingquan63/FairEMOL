@@ -45,7 +45,7 @@ If your syetem is windows, please choose
 
 ````lib_path = __file__[:-11] + 'core/Windows/lib64/v3.7/'  ````
 
-#### Load dateset
+#### Load dataset
 1. Put the raw data in `FairEMOL/EvolutionaryCodes/data/raw`
 2. Write the code to process raw date in `FairEMOL/EvolutionaryCodes/data/objects`, e.g., `German.py`
 3. Obtain the processed data in `FairEMOL/EvolutionaryCodes/data/preprocessed`, e.g., `german_numerical-for-NN.csv`
