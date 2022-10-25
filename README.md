@@ -50,7 +50,7 @@ If your syetem is windows, please choose
 2. Write the code to process raw date in `FairEMOL/EvolutionaryCodes/data/objects`, e.g., `German.py`
 3. Obtain the processed data in `FairEMOL/EvolutionaryCodes/data/preprocessed`, e.g., `german_numerical-for-NN.csv`
 4. Restore processed data in the folder `FairEMOL/EvolutionaryCodes/data`, e.g., `German`
-5. Use `FairEMOL/EvolutionaryCodes/load_data.py` to splite the data into training data, validation data, ensemble data (if you need) and test data. You can also set`save_csv=1` to manually store them.
+5. Use `FairEMOL/EvolutionaryCodes/load_data.py` to splite the data into training data, validation data, ensemble data (if you need) and test data. You can also set `save_csv=1` to manually store them.
 6. Add the dataset's name in `FairEMOL/EvolutionaryCodes/data/objects/list.py`
 
 #### Run algorithm
