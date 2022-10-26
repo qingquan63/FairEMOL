@@ -34,7 +34,10 @@ The code implementation is based on [geatpy](https://github.com/geatpy-dev/geatp
 
 
 ### How to use
-
+#### Overview
+There are two parts for this work, model training and ensemble learning.
+1. Model training: the code part is implemented using python.
+2. Ensemble learning: model selection strategies are implemented using matlab mainly based on [PlatEMO](https://github.com/BIMK/PlatEMO). 
 #### Set running environment
 
 In `FairEMOL/__init__.py`, if your system is linux, please choose
@@ -65,3 +68,12 @@ If your syetem is windows, please choose
   * `allobjs/ALL_Objs_{valid, test, ensemble, test}_genxxx_sofar.csv`: three or four `csv` file to record the objectives of all the individuals during optimisation process
   * `detect/`: record (1) the details of the dataset and (2) the objectives of all the individuals during optimisation process every `logMetric` (set in `Fairness_main.py`) generation
   * `nets/`: the neural network files of all the individuals during optimisation process every `logMetric` (set in `Fairness_main.py`) generation
+
+#### Ensemble Learning
+Based on the trained ML models, ensemble outputs considering some ML models can be calculated. This part is implemented using Matlab and the codes are in the folder `EnsembleCodes`.
+1. `compute_info`: Process the results of each run in the folder `Result/time_of_starting_the_run/detect/` 
+   1. Load data stored in the folder `Result/time_of_starting_the_run/detect/`
+   2. Apply ensemble stragies and calculate the ensemble outputs
+   3. Store the results of each run in the file `time_of_starting_the_run.mat`
+3. `merge_info`: merge all the ensemble results over all the runs for a dataset into one `.mat` file
+4. `analyse_info`: based on the results, process analysis
