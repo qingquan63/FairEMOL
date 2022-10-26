@@ -21,7 +21,7 @@ Please consider citing this work if you use this repository. The bibtex is as fo
 ````
 
 ### Discussions about this project
-The code implementation is based on [geatpy](https://github.com/geatpy-dev/geatpy). Further, we modified it so that the code supports individuals in a population being neural networks.
+The code implementation is based on [geatpy](https://github.com/geatpy-dev/geatpy). Further, we modified it so that the code supports individuals (solutions) in a population being neural networks during optimisation process.
 
 ### Main environments that have been tested
 * python 3.7.13
