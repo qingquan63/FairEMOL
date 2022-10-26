@@ -20,9 +20,6 @@ Please consider citing this work if you use this repository. The bibtex is as fo
   doi={10.1109/TEVC.2022.3209544}}
 ````
 
-### Discussions about this project
-The code implementation is based on [geatpy](https://github.com/geatpy-dev/geatpy). Further, we modified it so that the code supports individuals (solutions) in a population being neural networks during optimisation process.
-
 ### Main environments that have been tested
 * python 3.7.13
 * numpy 1.21.5
@@ -36,7 +33,8 @@ The code implementation is based on [geatpy](https://github.com/geatpy-dev/geatp
 ### How to use
 #### Overview
 There are two parts for this work, model training and ensemble learning.
-1. Model training: the code part is implemented using python.
+1. Model training: this part is implemented using python, which is mainly based on [geatpy](https://github.com/geatpy-dev/geatpy). Further, we modified it so that the code supports individuals (solutions) in a population being neural networks during optimisation process.
+
 2. Ensemble learning: model selection strategies are implemented using matlab mainly based on [PlatEMO](https://github.com/BIMK/PlatEMO). 
 #### Set running environment
 
