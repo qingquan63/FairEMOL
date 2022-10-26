@@ -73,7 +73,7 @@ If your syetem is windows, please choose
 Based on the trained ML models, ensemble outputs considering some ML models can be calculated. This part is implemented using Matlab and the codes are in the folder `EnsembleCodes`.
 1. `compute_info`: Process the results of each run in the folder `Result/time_of_starting_the_run/detect/` 
    1. Load data stored in the folder `Result/time_of_starting_the_run/detect/`
-   2. Apply ensemble stragies and calculate the ensemble outputs
+   2. Apply ensemble strategies and calculate the ensemble outputs
    3. Store the results of each run in the file `time_of_starting_the_run.mat`
 3. `merge_info`: merge all the ensemble results over all the runs for a dataset into one `.mat` file
 4. `analyse_info`: based on the results, process analysis
