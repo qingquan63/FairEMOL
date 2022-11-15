@@ -50,7 +50,7 @@ If your syetem is windows, please choose
 1. Data pre-processing is based on the [approach](https://github.com/algofairness/fairness-comparison).
    1. Put the raw data in `FairEMOL/EvolutionaryCodes/data/raw`
    2. Write the code to process raw date in `FairEMOL/EvolutionaryCodes/data/objects`, e.g., `German.py`
-   3. Run the code `FairEMOL/EvolutionaryCodes/data/objects/ProcessedData.py` 
+   3. Run the code `FairEMOL/EvolutionaryCodes/preprocess.py` 
    4. Obtain the processed data in `FairEMOL/EvolutionaryCodes/data/preprocessed`, e.g., `german_numerical-for-NN.csv`
    5. Restore processed data in the folder `FairEMOL/EvolutionaryCodes/data`, e.g., `German`
 2. Use `FairEMOL/EvolutionaryCodes/load_data.py` to splite the data into training data, validation data, ensemble data (if you need) and test data. You can also set `save_csv=1` to manually store them.
